@@ -7,10 +7,10 @@ bat 'python -m unittest discover'}}
 stage('Run')
 {steps{bat 'python app.py'}}
 stage('Deploy'){
-steps{echo 'deploying app'}}}
+steps{echo 'deploying successfully'}}}
 post{
 success{
-echo 'build run and deploy successful'
+echo 'Build, run and deploy successful...'
 }
 failure{
-echo 'something went wrong'}}}
+echo 'Something went wrong'}}}
